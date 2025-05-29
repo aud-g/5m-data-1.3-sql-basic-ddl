@@ -15,6 +15,8 @@ Write the SQL statement to create a unique index on the `email` column of the `s
 Answer:
 
 ```sql
+CREATE UNIQUE INDEX idx_student_email
+ON lesson.students ('email');
 
 ```
 
