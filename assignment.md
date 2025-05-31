@@ -27,6 +27,8 @@ Write the SQL statement to alter the `teachers` table in the `lesson` schema to 
 Answer:
 
 ```sql
+ALTER TABLE lesson.teachers
+ADD column subject varchar;
 
 ```
 
@@ -37,6 +39,9 @@ Write the SQL statement to update the `email` of the teacher with the name 'John
 Answer:
 
 ```sql
+select * from lesson.teachers;
+
+UPDATE lesson.teachers SET email = 'john.doe@school.com' WHERE name = 'John Doe';
 
 ```
 
